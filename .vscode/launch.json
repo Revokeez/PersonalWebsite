@@ -1,0 +1,14 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open FirstPage.html",
+            "file": "c:\\Users\\revok\\OneDrive - Inter American University of Puerto Rico - Bayamon Campus\\Desktop\\PersonalWebsite\\FirstPage.html"
+        }
+    ]
+}
