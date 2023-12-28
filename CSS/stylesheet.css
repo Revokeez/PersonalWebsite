@@ -164,7 +164,7 @@ header
     width: 170px;
     /*background-color: red;*/
     display: flex;
-    justify-content: space-between;
+    justify-content:space-evenly;
 }
 
 .home-logo a {
