@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/stylesheet.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="text/javascript" src="Javascript/script.js"></script>
     <title>Porfolio</title>
 </head>
-<body>
+<body onresize="resizing();">
     <header>
           <a href="FirstPage.html" class="logo">Edwin</a>
         <nav class="navbar">
@@ -38,7 +39,7 @@
     </section>
 
     <div class="image">
-      <img src="IMAGES/My_Image-transformed.png">
+      <img id = "img" src="IMAGES/My_Image-transformed.png">
       <!--<img class = "circle" src = "IMAGES/pngimg.com - circle_PNG36.png">-->
     </div>
 </body>
