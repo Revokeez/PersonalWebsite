@@ -2,9 +2,7 @@ function resizing()
 {
     let width = window.outerWidth;
     let height = window.outerHeight;
-    let response = "WIndow width: " + width + ", window height: " + height; 
-    console.log(response);
-    if(width < 420 && height < 870)
+    if(isPhone())
     {
         document.getElementById("img").style.visibility = "hidden";
     }
@@ -13,4 +11,10 @@ function resizing()
         document.getElementById("img").style.visibility = "visible";
     }
 
+}
+
+
+function isPhone()
+{
+   return /Android|iPhone/i.test(navigator.userAgent);
 }
