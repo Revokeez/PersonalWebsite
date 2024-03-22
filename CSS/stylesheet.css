@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Geologica';
 }
 body{
     /*background: #e7eaf6;*/
@@ -21,7 +21,7 @@ header
     width: 100%;
     padding: 20px 20px;
     background: transparent;
-    background-color: hsl(0, 0%, 25%);
+    /*background-color: hsl(0, 0%, 25%);*/
     text-decoration: none;
     display: flex;
     justify-content: space-between;
@@ -32,7 +32,7 @@ header
 .logo
 {
     font-size: 35px;
-    color: white;
+    color: black;
     text-decoration: none;
     font-weight: 800;
 }
@@ -41,7 +41,7 @@ header
     font-size: 35px;
     position: relative;
     padding: 5px;
-    color: #fff;
+    color: black;
     font-weight: 500;
     text-decoration: none;
     margin-left: 2px;
@@ -56,7 +56,7 @@ header
     left: 0;
     width: 0;
     height: 2px;
-    background: #fff;
+    background: black;
     transition: .5s;
 }
 
@@ -125,21 +125,21 @@ header
     overflow: hidden;
 }
 .buttons a:hover {/*First button*/
-    color: #081b29;
+    color: white;
 }
 .buttons a:nth-child(2)
 {
-    background: transparent;/*Secondbuttons*/
+    background: transparent;/*Secondbuttons text*/
     color: #081b29;
 }
 
 .buttons a:nth-child(2):hover{
-    color: #081b29;
+    color: white;
 }
 
 
-.buttons a:nth-child(2)::before{
-    background: #e7eaf6;
+.buttons a:nth-child(2)::before{/*Background color seconbutton*/
+    background: black;
     color: #081b29;
 }
 
@@ -151,7 +151,7 @@ header
     left: 0;
     width: 0%;
     height: 100%;
-    background: #e7eaf6;
+    background: black;/*Background color seconbutton*/
     z-index: -1;
     transition: .5s;
 }
@@ -189,14 +189,14 @@ header
     color: #081b29;
 }
 
-.home-logo a::before {
+.home-logo a::before {/*two buttons transition background color*/
     content: '';
     position: absolute;
     top: 0%;
     left: 0%;
     width: 0%;
     height: 100%;
-    background-color:#e7eaf6;
+    background-color:lightgray;
     z-index: -1;
     transition: .5s;
 }
