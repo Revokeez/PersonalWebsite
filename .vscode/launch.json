@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open FirstPage.html",
-            "file": "c:\\Users\\revok\\OneDrive - Inter American University of Puerto Rico - Bayamon Campus\\Desktop\\PersonalWebsite\\FirstPage.html"
+            "file": "C:\\Users\\Edwin Vazquez\\OneDrive - Inter American University of Puerto Rico - Bayamon Campus\\Desktop\\PersonalWebsite-1\\FirstPage.html"
         }
     ]
 }
