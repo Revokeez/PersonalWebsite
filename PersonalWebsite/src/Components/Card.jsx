@@ -1,24 +1,33 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from "react";
 
-const Card = () => {
+const Card = ({text, title, showGithubLink, showLinkOfProject, img, alt}) => {
     return(
         <div className="p-5">
         <div className="card bg-base-100 w-96 shadow-sm">
             <figure>
-                <img
-                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                alt="Shoes" />
+                <img className="w-96 h-70"
+                src={img}
+                alt={alt} />
             </figure>
             <div className="card-body">
                 <h2 className="card-title">
-                Card Title
-                <div className="badge badge-secondary">NEW</div>
+                {title}
                 </h2>
-                <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                <p>{text}</p>
                 <div className="card-actions justify-end">
-                <div className="badge badge-outline">Fashion</div>
-                <div className="badge badge-outline">Products</div>
+                    {showGithubLink && typeof showGithubLink == "string" && showGithubLink.length > 0 && 
+                        <a href={showGithubLink} target="_blank">
+                            <div className="badge badge-outline">Go to github</div>
+                        </a>
+                    }
+                    {showLinkOfProject && typeof showLinkOfProject == "string" && showLinkOfProject.length > 0 && 
+                        
+                        <a href={showLinkOfProject} target="_blank">
+                            <div className="badge badge-outline">Go to website</div>
+                        </a>
+                    }
                 </div>
             </div>
         </div>
