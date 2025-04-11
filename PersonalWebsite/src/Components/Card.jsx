@@ -17,12 +17,18 @@ const Card = ({text, title, showGithubLink, showLinkOfProject, img, alt, dir}) =
               </div>
 
               <div className="card-footer text-center">
+                {showLinkOfProject && typeof showLinkOfProject == "string" && showLinkOfProject.length > 0 &&
+                    <a href={showLinkOfProject} target="_blank">
+                        <p className=""> Go to Proyect</p>
+                    </a>
+                }
                 {showGithubLink && typeof showGithubLink == "string" && showGithubLink.length > 0 &&
                     <a href={showGithubLink} target="_blank">
-                        <p className="text-base-content/50"> Go to github</p>
+                        <p className=""> Go to github</p>
                     </a>
                 }
               </div>
+              
 
               {/* <div className="card-footer text-center">
                 <p className="text-base-content/50">Learn more about our features.</p>
