@@ -3,8 +3,6 @@
 //Components
 import React, { useEffect }  from "react";
 
-import "../CSS/style.css"
-
 function isInViewport(item) {
     if (item instanceof Element) {
       const rect = item.getBoundingClientRect();

@@ -4,31 +4,16 @@
 import React from "react";
 import { useEffect } from "react";
 
-
-const ShowImg = ({ src, alt, display, marginLeft, marginRight,
-        	       width, height, paddingLeft, paddingRight, 
-                   paddingTop, paddingBottom, padding, borderRadius, 
-                   float, maxWidth, maxHeight}) => {
-    return <img 
-    src={src}
-    alt={alt} 
-    style={{ 
-            display: display, 
-            marginLeft: marginLeft, 
-            marginRight: marginRight, 
-            width: width, 
-            height:height, 
-            paddingLeft:paddingLeft,
-            paddingRight: paddingRight,
-            paddingTop: paddingTop,
-            paddingBottom: paddingBottom,
-            padding: padding,
-            borderRadius:borderRadius,
-            float: float,
-            maxWidth: maxWidth,
-            maxHeight: maxHeight
-        }} 
-    />;
+const ShowImg = ({src}) => {
+    return (
+        <div className="flex justify-center">
+          <div className="avatar">
+                <div className="size-100 rounded-full">
+                    <img src={src} alt="avatar" />
+                </div>
+          </div>
+        </div>
+    )
 };
 
 export default ShowImg;
