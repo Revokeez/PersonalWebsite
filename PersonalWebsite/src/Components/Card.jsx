@@ -2,36 +2,33 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 
-const Card = ({text, title, showGithubLink, showLinkOfProject, img, alt}) => {
+const Card = ({text, title, showGithubLink, showLinkOfProject, img, alt, dir}) => {
     return(
-        <div className="p-5">
-        <div className="card bg-base-100 w-96 shadow-sm">
-            <figure>
-                <img className="w-96 h-70"
-                src={img}
-                alt={alt} />
-            </figure>
-            <div className="card-body">
-                <h2 className="card-title">
-                {title}
-                </h2>
-                <p>{text}</p>
-                <div className="card-actions justify-end">
-                    {showGithubLink && typeof showGithubLink == "string" && showGithubLink.length > 0 && 
-                        <a href={showGithubLink} target="_blank">
-                            <div className="badge badge-outline">Go to github</div>
-                        </a>
-                    }
-                    {showLinkOfProject && typeof showLinkOfProject == "string" && showLinkOfProject.length > 0 && 
-                        
-                        <a href={showLinkOfProject} target="_blank">
-                            <div className="badge badge-outline">Go to website</div>
-                        </a>
-                    }
-                </div>
+        <div dir={dir} className="m-4 text-center">
+            <div className="card card-xl sm:max-w-sm bg-primary">
+            <div className="flex justify-center pt-5">
+            <img src={img} />
             </div>
-        </div>
-        </div>
+              <div className="card-header">
+                <h5 className="card-title">{title}</h5>
+              </div>
+              <div className="card-body">
+                <p>{text}</p>
+              </div>
+
+              <div className="card-footer text-center">
+                {showGithubLink && typeof showGithubLink == "string" && showGithubLink.length > 0 &&
+                    <a href={showGithubLink} target="_blank">
+                        <p className="text-base-content/50"> Go to github</p>
+                    </a>
+                }
+              </div>
+
+              {/* <div className="card-footer text-center">
+                <p className="text-base-content/50">Learn more about our features.</p>
+              </div> */}
+            </div>
+         </div>
     );
 }
 

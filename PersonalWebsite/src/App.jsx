@@ -4,6 +4,7 @@
 import React, { useEffect } from "react";
 import ShowImg from "./Components/ShowImg.jsx";
 import Text from  "./Components/Text.jsx"
+import Card from "./Components/Card.jsx";
 
 //CSS Files
 import './CSS/index.css';
@@ -13,27 +14,25 @@ import Moon from "./assets/stars.jpg"
 
 function App() {
   return (
-    <div className="bg-black">
+    <div>
       <ShowImg src="https://cdn.flyonui.com/fy-assets/avatar/avatar-1.png"/>
       <div className="text-center font-mono text-3xl">
           <h1>Hello my name is Edwin</h1>
           <h1>Im a computer science student in the inter bayamon</h1>
       </div>
 
-
-        <div dir="rtl">
-            <div className="card card-xl sm:max-w-sm">
-              <div className="card-header">
-                <h5 className="card-title">Innovative Solutions</h5>
-              </div>
-              <div className="card-body">
-                <p>Explore our cutting-edge features designed to elevate your experience. Learn how our solutions can help you achieve your goals.</p>
-              </div>
-              <div className="card-footer text-center">
-                <p className="text-base-content/50">Learn more about our features.</p>
-              </div>
+      <div className="text-center font-mono text-3xl mt-10">
+            <h1>Proyects and Awards</h1>
+            <div className="flex justify-center max-xl:flex-col max-sm:flex-col">
+                  <Card img="https://cdn.flyonui.com/fy-assets/avatar/avatar-1.png" showGithubLink="Something" title="Assosiation Website" text="Test" dir=""/> 
+                  <Card img="https://cdn.flyonui.com/fy-assets/avatar/avatar-1.png" showGithubLink="Something" title="Assosiation Website" text="Test" dir=""/>  
+                  <Card img="https://cdn.flyonui.com/fy-assets/avatar/avatar-1.png" showGithubLink="Something" title="Assosiation Website" text="Test" dir=""/> 
+                  <Card img="https://cdn.flyonui.com/fy-assets/avatar/avatar-1.png" showGithubLink="Something" title="Assosiation Website" text="Test" dir=""/>  
+                  <Card img="https://cdn.flyonui.com/fy-assets/avatar/avatar-1.png" showGithubLink="Something" title="Assosiation Website" text="Test" dir=""/> 
+                  <Card img="https://cdn.flyonui.com/fy-assets/avatar/avatar-1.png" showGithubLink="Something" title="Assosiation Website" text="Test" dir=""/>  
             </div>
-         </div>
+      </div>
+
 
     </div>
   )
