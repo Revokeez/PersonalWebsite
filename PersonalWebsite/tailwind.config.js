@@ -1,5 +1,4 @@
 import flyonui from "flyonui";
-import { addDynamicIconSelectors } from "@iconify/tailwind"; 
 
 
 /** @type {import('tailwindcss').Config} */
@@ -12,8 +11,7 @@ export default {
         extend: {},
     },
     plugins: [
-        flyonui, // Use the imported FlyonUI plugin here
-        addDynamicIconSelectors
+        flyonui,
     ],
     flyonui: {
         themes: true, // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "soft"]
