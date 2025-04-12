@@ -33,22 +33,32 @@ const ProjectsAndAwards = () =>{
 
     return (
         <>
-              <div id="projectsandawards"></div>
-        <div className="text-center font-mono text-3xl mt-10" data-aos="zoom-in">
-            <h1>Proyects and Awards</h1>
-                <div className="flex justify-center flex-wrap">
-                    <Card img={Assosiation_Website_IMG} showGithubLink="https://github.com/InfoTech-UIPRB/Info-tech" 
-                        showLinkOfProject="https://infotech-uiprb.com/index.html" 
-                        title="Assosiation Website" 
-                        text={associationWebsite} dir=""/> 
+            <div id="projectsandawards"></div>
+            <div className="text-center font-mono text-3xl mt-10" data-aos="zoom-in">
+                <h1>Proyects and Awards</h1>
+                    <div className="flex justify-center flex-wrap">
+                        <Card img={Assosiation_Website_IMG} showGithubLink="https://github.com/InfoTech-UIPRB/Info-tech" 
+                            showLinkOfProject="https://infotech-uiprb.com/index.html" 
+                            title="Assosiation Website" 
+                            text={associationWebsite} dir=""/> 
 
-                    <Card img={First_Place_UPRM}   title="First Place, UPR Mayaguez Deconflicting in Space Challenge" text={firstPlaceUPRM} dir=""/>  
-                    <Card img={First_Place_ISACA}  title="First Place IT Bown 2025" text={firstPlaceISACA} dir=""/>
-                    <Card img={First_Place_IHACK}  title="First Place IHACK" text={firstPlaceIHACK} dir=""/> 
-                    <Card img={Second_Place_UPRB}  title="Second Place beginner UPRB" text={secondPlaceUPRB} dir=""/>  
-                    
-                </div>
-  </div>  
+                        <Card img={First_Place_UPRM}   
+                        title="First Place, UPR Mayaguez Deconflicting in Space Challenge" 
+                        text={firstPlaceUPRM} dir=""/>
+
+                        <Card img={First_Place_ISACA}  
+                        title="First Place ISACA IT Bown 2025" 
+                        text={firstPlaceISACA} dir=""/>
+
+                        <Card img={First_Place_IHACK}  
+                        title="First Place IHACK" 
+                        text={firstPlaceIHACK} dir=""/> 
+
+                        <Card img={Second_Place_UPRB} 
+                        title="Second Place beginner UPRB" 
+                        text={secondPlaceUPRB} dir=""/>  
+                    </div>
+            </div> 
         </>
 
     );
