@@ -1,5 +1,8 @@
 @import "tailwindcss";
 @plugin "flyonui";
+@plugin "flyonui" {
+    themes: light --default, dark --default; /* By defualt*/
+}
 @import "flyonui/variants.css";
 @plugin "@iconify/tailwind4";
 

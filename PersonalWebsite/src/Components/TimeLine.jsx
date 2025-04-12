@@ -4,6 +4,8 @@ import React from "react";
 
 const TimeLine = ()=>{
     return (
+      <div className="mt-10">
+              <h1 className="text-center font-mono text-3xl">Work Experience</h1>
 <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
   <li>
     <div className="timeline-middle">
@@ -95,6 +97,7 @@ Contributed to the project’s completion in one month, ahead of the planned two
   </li>
 
 </ul>
+</div>
     );
 }
 
