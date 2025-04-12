@@ -6,10 +6,10 @@ import Card from "./Card";
 
 //Images
 import First_Place_UPRM from "../assets/upr_mayaguez_img.jpg"
-import Assosiation_Website_IMG from "../assets/Infotech_HomePage_IMG.png"
-import First_Place_ISACA from "../assets/ISCA_with_team.jpg"
-import First_Place_IHACK from "../assets/IHACK_with_director.jpg"
-import Second_Place_UPRB from "../assets/Second_Place_UPRB.jpg"
+import Assosiation_Website_IMG from "../assets/infotech_homePage_img.png"
+import First_Place_ISACA from "../assets/ISACA_with_team_img.jpg"
+import First_Place_IHACK from "../assets/IHACK_with_director_img.jpg"
+import Second_Place_UPRB from "../assets/second_place_uprb_img.jpg"
 
 const ProjectsAndAwards = () =>{
     const associationWebsite = `Designed and developed a responsive website using HTML, Tailwind CSS, and JavaScript to enhance the 
@@ -32,21 +32,25 @@ const ProjectsAndAwards = () =>{
     challenged to identify three issues and explain them within a limited of 90 min. We also had to present our findings to the judges.`;    
 
     return (
-        <div className="text-center font-mono text-3xl mt-10">
-        <h1>Proyects and Awards</h1>
-        <div className="flex justify-center flex-wrap">
-              <Card img={Assosiation_Website_IMG} showGithubLink="https://github.com/InfoTech-UIPRB/Info-tech" 
-                showLinkOfProject="https://infotech-uiprb.com/index.html" 
-                title="Assosiation Website" 
-                text={associationWebsite} dir=""/> 
+        <>
+              <div id="projectsandawards"></div>
+        <div className="text-center font-mono text-3xl mt-10" data-aos="zoom-in">
+            <h1>Proyects and Awards</h1>
+                <div className="flex justify-center flex-wrap">
+                    <Card img={Assosiation_Website_IMG} showGithubLink="https://github.com/InfoTech-UIPRB/Info-tech" 
+                        showLinkOfProject="https://infotech-uiprb.com/index.html" 
+                        title="Assosiation Website" 
+                        text={associationWebsite} dir=""/> 
 
-              <Card img={First_Place_UPRM}   title="First Place, UPR Mayaguez Deconflicting in Space Challenge" text={firstPlaceUPRM} dir=""/>  
-              <Card img={First_Place_ISACA}  title="First Place IT Bown 2025" text={firstPlaceISACA} dir=""/>
-              <Card img={First_Place_IHACK}  title="First Place IHACK" text={firstPlaceIHACK} dir=""/> 
-              <Card img={Second_Place_UPRB}  title="Second Place beginner UPRB" text={secondPlaceUPRB} dir=""/>  
-            
-        </div>
-  </div>
+                    <Card img={First_Place_UPRM}   title="First Place, UPR Mayaguez Deconflicting in Space Challenge" text={firstPlaceUPRM} dir=""/>  
+                    <Card img={First_Place_ISACA}  title="First Place IT Bown 2025" text={firstPlaceISACA} dir=""/>
+                    <Card img={First_Place_IHACK}  title="First Place IHACK" text={firstPlaceIHACK} dir=""/> 
+                    <Card img={Second_Place_UPRB}  title="Second Place beginner UPRB" text={secondPlaceUPRB} dir=""/>  
+                    
+                </div>
+  </div>  
+        </>
+
     );
 };
 

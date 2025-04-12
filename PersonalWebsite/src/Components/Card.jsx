@@ -4,7 +4,7 @@ import React from "react";
 
 const Card = ({text, title, showGithubLink, showLinkOfProject, img, alt, dir}) => {
     return(
-        <div dir={dir} className="m-4 text-center">
+        <div dir={dir} className="m-4 text-center duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
             <div className="card card-xl sm:max-w-sm bg-primary">
             <div className="flex justify-center pt-5 w-full h-128">
               <img src={img} />

@@ -9,7 +9,7 @@ const Navbar = () => {
                     <div className="navbar-start items-center justify-between max-md:w-full">
                         <a
                             className="link text-base-content link-neutral text-xl font-semibold no-underline"
-                            href="#footer"
+                            href="../App.jsx"
                         >
                             Edwin
                         </a>
@@ -29,13 +29,12 @@ const Navbar = () => {
                 </div>
                 <div
                     id="default-navbar-collapse"
-                    className="md:navbar-end collapse hidden grow basis-full overflow-hidden transition-[height] duration-300 max-md:w-full"
-                    data-scrollspy="#scrollspy-1" data-scrollspy-scrollable-parent="#scrollspy-scrollable-parent-1">
+                    className="md:navbar-end collapse hidden grow basis-full overflow-hidden transition-[height] duration-300 max-md:w-full">
                     <ul className="menu md:menu-horizontal gap-2 p-0 text-base max-md:mt-2">
                         <li><a href="#whoami">Who am I</a></li>
-                        <li><a href="#">Projects and Awards</a></li>
-                        <li><a href="#">Work Experience</a></li>
-                        <li><a href="#">Contact Me</a></li>
+                        <li><a href="#projectsandawards">Projects and Awards</a></li>
+                        <li><a href="#workexperience">Work Experience</a></li>
+                        <li><a href="#dowloadresume">Download Resume</a></li>
                     </ul>
                 </div>
             </div>

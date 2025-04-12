@@ -1,9 +1,11 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 
+import "flyonui/flyonui.js"
+
 const Testing = () => {
     return (
-        <div id="scrollspy-scrollable-parent-3" className="overflow-y-auto max-h-96">
+    <div id="scrollspy-scrollable-parent-3" className="overflow-y-auto max-h-96">
   <div className="grid grid-cols-5">
     <div className="col-span-2 pe-6 sm:col-span-1">
       <ul className="border-base-content/25 divide-base-content/25 sticky top-0 divide-y rounded-md border text-sm leading-6 *:p-0 *:first:rounded-t-md *:last:rounded-b-md" data-scrollspy="#scrollspy-3" data-scrollspy-scrollable-parent="#scrollspy-scrollable-parent-3">
