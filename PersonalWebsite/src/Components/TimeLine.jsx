@@ -20,7 +20,7 @@ const TimeLine = ()=>{
                           clipRule="evenodd" />
                       </svg>
                     </div>
-                    <div className="timeline-start mb-10 md:text-end" data-aos="fade-right">
+                    <div className="timeline-start mb-10 md:text-end" data-aos="">
                       <time className="font-mono italic">AUG 2023 - DEC 2024 </time>
                       <div className="text-lg font-black">Success Center Inter-American University of Puerto Rico, Bayamón Campus - Student Tutor</div>
                       Demonstrated strong knowledge and proficiency in Fundamentals in Algebra and Logical Programming, enabling students to grasp 
@@ -43,7 +43,7 @@ const TimeLine = ()=>{
                           clipRule="evenodd" />
                       </svg>
                     </div>
-                    <div className="timeline-end md:mb-10" data-aos="fade-left">
+                    <div className="timeline-end md:mb-10" data-aos="">
                       <time className="font-mono italic">JUN 2024 – JUL 2024</time>
                       <div className="text-lg font-black">CEGsoft (Computer Expert Group) - Software Developer Intern </div>
                       Developed an internal tool for customer support to manage clients in Zendesk, including features for activating/deactivating 
@@ -66,7 +66,7 @@ const TimeLine = ()=>{
                           clipRule="evenodd" />
                       </svg>
                     </div>
-                    <div className="timeline-start mb-10 md:text-end" data-aos="fade-right">
+                    <div className="timeline-start mb-10 md:text-end" data-aos="">
                       <time className="font-mono italic"> SEP 2023 – DEC 2023 </time>
                       <div className="text-lg font-black">Inter-American University of Puerto Rico – Bayamón Campus - Data Science Speaker </div>
                       Acted as a distinguished speaker at the Inter American Data Camp held in the vibrant locale of Manati, Puerto Rico. Specialized in delivering a comprehensive curriculum that demystified the fundamental aspects of data science, catering specifically to the diverse educational needs of the attendees.
@@ -87,7 +87,7 @@ const TimeLine = ()=>{
                           clipRule="evenodd" />
                       </svg>
                     </div>
-                    <div className="timeline-end md:mb-10" data-aos="fade-left">
+                    <div className="timeline-end md:mb-10" data-aos="">
                       <time className="font-mono italic">JUN 2023 - AUG 2023</time>
                       <div className="text-lg font-black">Master Workforce Inter-American University of Puerto Rico, Bayamón Campus - Research Intern </div>
                       Learned the fundamentals of Modeling and simulation for a Phishing Identification and Decision Support System. 
