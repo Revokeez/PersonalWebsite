@@ -6,7 +6,7 @@ const Footer = () => {
         <footer className="footer bg-base-200/60 px-6 py-" id="footer">
           <div className="flex w-full items-center justify-between">
           <aside className="grid-flow-col items-center">
-            <p>©2025 <a className="link link-hover font-medium  duration-300 ease-in-out hover:-translate-y-1" href="../App.jsx">Edwin</a></p>
+            <p>©2025 <a className="link link-hover font-medium  duration-300 ease-in-out hover:-translate-y-1" href="#">Edwin</a></p>
           </aside>
             <div className="flex gap-4 h-5">
               <a href="https://github.com/Revokeez" className="link" aria-label="Github Link" target="_blanl">
