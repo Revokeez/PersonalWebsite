@@ -1,17 +1,18 @@
 import flyonui from "flyonui";
+import flyonuiPlugin from "flyonui/plugins";
 
 
 /** @type {import('tailwindcss').Config} */
 export default {
     content: [
         "./index.html",
-        "./src/**/*.{js,ts,jsx,tsx}",
+        "./src/**/*.{js,ts,jsx,tsx}", "./node_modules/flyonui/dist/js/*.js",
     ],
     theme: {
         extend: {},
     },
     plugins: [
-        flyonui,
+        [flyonuiPlugin, flyonui],
     ],
     flyonui: {
         themes: true, // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "soft"]

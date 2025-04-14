@@ -9,7 +9,7 @@ const Navbar = () => {
                     <div className="navbar-start items-center justify-between max-md:w-full">
                         <a
                             className="link text-base-content link-neutral text-xl font-semibold no-underline"
-                            href="../App.jsx"
+                            href="#"
                         >
                             Edwin
                         </a>
