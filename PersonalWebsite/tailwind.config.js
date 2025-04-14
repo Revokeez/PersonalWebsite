@@ -6,7 +6,7 @@ import flyonuiPlugin from "flyonui/plugins";
 export default {
     content: [
         "./index.html",
-        "./src/**/*.{js,ts,jsx,tsx}", "./node_modules/flyonui/dist/js/*.js",
+        "./src/**/*.{js,ts,jsx,tsx}", "./node_modules/flyonui/dist/js/*.js", "./node_modules/flyonui/flyonui.js",
     ],
     theme: {
         extend: {},

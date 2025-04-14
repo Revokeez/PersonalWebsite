@@ -25,7 +25,7 @@ function App() {
           <WhoAmI />
           <ProjectsAndAwards />
           <TimeLine />
-          <Resume/>
+          <Resume />
           <Footer />
       </div>
     )
