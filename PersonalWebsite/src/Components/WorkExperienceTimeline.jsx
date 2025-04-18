@@ -21,6 +21,7 @@ const SVG = () =>
 }
 
 const WorkExperience = ({left=false, date, text, title}) => {
+  {/*If left is true that means it will position the text to the end (Left)*/}
   const isLeft = (left) ? "timeline-end md:mb-10" : "timeline-start md:mb-10 md:text-end";
   return (
       <>
@@ -29,6 +30,7 @@ const WorkExperience = ({left=false, date, text, title}) => {
                   <div className="text-lg font-black">{title}</div>
                   {text}
           </div>
+          {/*horizontal rule: It's an empty tag used to create a thematic break or a line that visually separates content on a webpage*/}
           <hr />
       </>
   )
@@ -60,6 +62,10 @@ const WorkExperienceTimeline = ()=> {
     return (
       <div className="mt-10" id ="workexperience">
               <h1 className="text-center font-mono text-3xl">Work Experience</h1>
+              {/*
+                timeline-vertical is what making it the timeline vertical...duh.
+                timeline-compact is when the screen width is small. It shows the timeline verticaly but in the text are in the same column 
+              */}
                 <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
                   <li>
                     <SVG />
