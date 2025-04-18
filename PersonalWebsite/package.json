@@ -1,12 +1,12 @@
 {
   "name": "personalwebsite",
-  "homepage": "https://revokeez.github.io/PersonalWebsite",
+  "homepage": "https://revokeez.github.io/PersonalWebsite/PersonalWebsite/index.html",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",

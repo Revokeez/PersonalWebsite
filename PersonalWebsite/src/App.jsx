@@ -2,9 +2,7 @@
 
 //Components
 import React from "react";
-
-//Production Components
-import TimeLine from "./Components/TimeLine.jsx";
+import TimeLine from "./Components/WorkExperienceTimeline.jsx";
 import WhoAmI from "./Components/WhoAmI.jsx";
 import Footer from "./Components/Footer.jsx";
 import Navbar from "./Components/Navbar.jsx";
@@ -59,7 +57,7 @@ const ImportDevelopmentCode = ({showDevelopmentCode=false}) =>
 function App() {
   return (
       <ImportDevelopmentCode showDevelopmentCode={true}/>
-    )
+  )
 }
 
 export default App;
