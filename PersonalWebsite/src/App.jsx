@@ -66,7 +66,7 @@ function App() {
   */}
   return (
 
-      <ImportDevelopmentCode showDevelopmentCode={true}/>
+      <ImportDevelopmentCode showDevelopmentCode={false}/>
   )
 }
 
