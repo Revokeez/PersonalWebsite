@@ -24,7 +24,7 @@ const Introduction = () => {
     return (
         <div className="mt-10" id="whoami">
                 <ProfileImg src={AI_Me}/>
-                <div className="text-center font-mono text-3xl">
+                <div className="text-center font-mono text-3xl mt-5">
                     <h1>YOUR ARE IN DEVELOPMENT ENVIROMENT</h1>
                     <h1>IF YOU WANT TO USE PRODUCTION CODE PLEASE SET showDevelopmentCode to <span className="text-red-600">False</span> IN FUNCTION ImportDevelopmentCode IN App.jsx</h1>
                 </div>

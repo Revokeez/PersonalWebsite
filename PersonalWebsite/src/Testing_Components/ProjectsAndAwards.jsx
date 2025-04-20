@@ -57,8 +57,8 @@ const ProjectsAndAwards = () =>{
             */}
             <div id="projectsandawards"></div>
             
-            <div className="text-center font-mono text-3xl mt-10" data-aos="zoom-in">
-                <h1>Proyects and Awards</h1>
+            <div className="text-center font-mono mt-10" data-aos="zoom-in">
+                <h1 className="text-3xl">Proyects and Awards</h1>
                     <div className="flex justify-center flex-wrap">
                         <Card img={First_Place_IHACK}  
                               title="First Place IHACK" 
@@ -81,10 +81,12 @@ const ProjectsAndAwards = () =>{
                               title="Second Place beginner UPRB" 
                               text={secondPlaceUPRB}/>  
 
-                        {/* <Card img={Img_Not_Found}
+                        {/* 
+                              <Card img={Img_Not_Found}
                               title="Phishing Identification and Decision Support System (PIDSS) Master Workfoce Research Internship"
                               text={pidss}
-                              showGithubLink="https://github.com/nordiel/PIDSS"/> */}
+                              showGithubLink="https://github.com/nordiel/PIDSS"/> 
+                        */}
 
                         <Card img={Catch_Phishing} 
                               title="CatchPhising Website Master Workfoce Research Internship" 

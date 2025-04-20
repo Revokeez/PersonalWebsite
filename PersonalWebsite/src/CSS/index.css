@@ -21,3 +21,10 @@
 html {
     scroll-behavior: smooth;
 }
+
+@font-face {
+    font-family: "Lato-Italic";
+    src: local("Lato-Italic"),
+         url("../assets/Fonts/Lato-Italic.ttf")
+         format("truetype");
+}

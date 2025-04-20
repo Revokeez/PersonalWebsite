@@ -24,7 +24,7 @@ const Introduction = () => {
     return (
         <div className="mt-10" id="whoami">
                 <ProfileImg src={AI_Me}/>
-                <div className="text-center font-mono text-3xl">
+                <div className="text-center font-mono text-3xl mt-5">
                     <h1>Hello my name is Edwin</h1>
                     <h1>Im a computer science student at the inter bayamon</h1>
                 </div>
