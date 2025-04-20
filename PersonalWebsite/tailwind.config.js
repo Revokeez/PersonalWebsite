@@ -9,7 +9,11 @@ export default {
         "./src/**/*.{js,ts,jsx,tsx}", "./node_modules/flyonui/dist/js/*.js", "./node_modules/flyonui/flyonui.js",
     ],
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                latoItalic: [`Lato-Italic`]
+            }
+        },
     },
     plugins: [
         [flyonuiPlugin, flyonui],
