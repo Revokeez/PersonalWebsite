@@ -9,18 +9,20 @@ import WorkExperienceTimeline from "./Components/WorkExperienceTimeline.jsx";
 import WhoAmI from "./Components/WhoAmI.jsx";
 import Footer from "./Components/Footer.jsx";
 import Navbar from "./Components/Navbar.jsx";
-import ProjectsAndAwards from "./Components/ProjectsAndAwards.jsx";
 import Introduction from "./Components/Introduction.jsx";
 import Resume from "./Components/Resume.jsx";
+import Projects from "./Components/Projects.jsx";
+import Awards from "./Components/Awards.jsx";
 
 //Development Components
 import TestingWorkExperienceTimeline from "./Testing_Components/WorkExperienceTimeline.jsx";
 import TestingWhoAmI from "./Testing_Components/WhoAmI.jsx";
 import TestingFooter from "./Testing_Components/Footer.jsx";
 import TestingNavbar from "./Testing_Components/Navbar.jsx";
-import TestingProjectsAndAwards from "./Testing_Components/ProjectsAndAwards.jsx";
 import TestingIntroduction from "./Testing_Components/Introduction.jsx";
 import TestingResume from "./Testing_Components/Resume.jsx";
+import TestingProjects from "./Testing_Components/Projects.jsx";
+import TestingAwards from "./Testing_Components/Awards.jsx";
 
 //CSS Files
 import './CSS/index.css';
@@ -37,7 +39,8 @@ const ImportDevelopmentCode = ({showDevelopmentCode}) =>
             <TestingNavbar />  
             <TestingIntroduction />
             <TestingWhoAmI />
-            <TestingProjectsAndAwards />
+            <TestingAwards />
+            <TestingProjects />
             <TestingWorkExperienceTimeline />
             <TestingResume />
             <TestingFooter />
@@ -48,7 +51,8 @@ const ImportDevelopmentCode = ({showDevelopmentCode}) =>
             <Navbar />  
             <Introduction />
             <WhoAmI />
-            <ProjectsAndAwards />
+            <Awards />
+            <Projects />
             <WorkExperienceTimeline />
             <Resume/>
             <Footer />
