@@ -2,6 +2,12 @@
 import React from "react";
 import "flyonui/flyonui.js";
 
+const Link = ({text, id}) => {
+    return (
+        <li><a href= {`#${id}`} className="hover:text-violet-300 after:bg-violet-300 after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">{text}</a></li>
+    )
+}
+
 const Navbar = () => {
     return (
         <nav className="navbar rounded-box shadow-base-300/20 shadow-sm">
@@ -19,11 +25,11 @@ const Navbar = () => {
                 </div>
                 <div id="default-navbar-collapse" className="md:navbar-end collapse hidden grow basis-full overflow-hidden transition-[height] duration-300 max-md:w-full" >
                     <ul className="menu md:menu-horizontal gap-2 p-0 text-base max-md:mt-2">
-                        <li><a href="#whoami" className="hover:text-violet-300">Who am I</a></li>
-                        <li><a href="#awards" className="hover:text-violet-300">Awards</a></li>
-                        <li><a href="#projects" className="hover:text-violet-300">Projects</a></li>
-                        <li><a href="#workexperience" className="hover:text-violet-300">Work Experience</a></li>
-                        <li><a href="#dowloadresume" className="hover:text-violet-300">Download Resume</a></li>
+                        <Link id="whoami" text="Who am I" />
+                        <Link id="awards" text="Awards" />
+                        <Link id="projects" text="Projects"/>
+                        <Link id="workexperience" text="Work Experience" />
+                        <Link id="downloadresume" text="Download Resume"/>
                     </ul>
                 </div>
             </div>
