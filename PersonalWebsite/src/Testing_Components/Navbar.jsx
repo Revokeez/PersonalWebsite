@@ -33,9 +33,9 @@ const Navbar = () => {
         <nav className="shadow-md top-0 left-0 w-full text-white">
             <div className="w-full flex justify-between items-center px-4 py-4">
                 <div className="flex-1 text-left">
-                <a className="link text-base-content link-neutral text-2xl font-bold no-underline" href="">Edwin</a>
+                <a className="link text-base-content link-neutral text-xl font-bold no-underline" href="">Edwin</a>
                 </div>
-                <div className="hidden md:flex justify-center space-x-8 text-xl">
+                <div className="hidden md:flex justify-center space-x-8 text-base">
                 {navigation.map((item) => (
                     <Link key={item.id} id={item.id} text={item.name} />
                 ))}
