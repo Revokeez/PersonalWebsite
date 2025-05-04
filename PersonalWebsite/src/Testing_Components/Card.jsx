@@ -10,16 +10,14 @@ const Card = ({text, title, showGithubLink, showLinkOfProject, img, alt}) => {
 
     const hoverAnimation = "after:bg-violet-300 after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer"
   return(
-        <div className="m-4 duration-300 ease-in-out md:hover:-translate-y-1 md:hover:scale-110">
-            <div className="card-xl max-md:card-xs max-w-sm bg-violet-300">
+            <div className="card-xl max-md:card-xs max-w-sm bg-violet-300 m-4 duration-300 ease-in-out md:hover:-translate-y-1 md:hover:scale-110">
             <div className="flex justify-center pt-5 w-full h-118 object-cover">
               <img className="object-cover" src={img} />
             </div>
-              <div className="card-header">
-                <h5 className="card-title text-black">{title}</h5>
-              </div>
+
               <div className="card-body text-black text-base text-left">
-                <p>{text}</p>
+                  <h5 className="md:text-4xl text-2xl text-center text-black">{title}</h5>
+                  <p className="md:text-2xl text-xl">{text}</p>
               </div>
 
               {/*
@@ -28,7 +26,7 @@ const Card = ({text, title, showGithubLink, showLinkOfProject, img, alt}) => {
                 If its not that means theres going to be a link in the card.
               */}
 
-              <div className="card-footer text-center">
+              <div className="card-footer text-center md:text-2xl text-xl">
                 {showLinkOfProject && typeof showLinkOfProject == "string" && showLinkOfProject.length > 0 &&
                     <a href={showLinkOfProject} target="_blank">
                         <p className={`text-black ${hoverAnimation}`}> Go to Proyect</p>
@@ -41,7 +39,6 @@ const Card = ({text, title, showGithubLink, showLinkOfProject, img, alt}) => {
                 }
               </div>
             </div>
-         </div>
     );
 }
 
