@@ -51,7 +51,7 @@ const Awards = () =>{
                               text={firstPlaceIHACK}/>
 
                         <Card img={First_Place_ISACA}  
-                              title="First Place ISACA IT Bown 2025" 
+                              title="First Place ISACA IT Bowl 2025" 
                               text={firstPlaceISACA}/> 
 
                         <Card img={First_Place_UPRM}   
