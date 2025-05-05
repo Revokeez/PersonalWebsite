@@ -16,11 +16,9 @@ const Awards = () =>{
     online presence of the student association. Implemented a streamlined Git and GitHub Actions pipeline to enable continuous integration
     and automated deployments.`;   
     
-    const catchPhisingWebsite = `Catch Phish is an online platform to learn about Phishing emails and how to protect yourself against
-    them. This website was built as part of our submodel "Phish Training" for the Master Workforce Research Internship by the Interamerican
-    University of Puerto Rico, Bayamon campus and the Interamerican University of Puerto Rico, San German campus as part of our Modeling
-    and Simulation research program. This project hopes to help people learn how to identify Phishing emails and prevent falling into the
-    trap of bad actors.`
+    const catchPhisingWebsite = `Catch Phish is an online platform designed to teach users how to spot and avoid phishing emails.
+    Developed under the "Phish Training" submodel for the Master Workforce Research Internship, it aims to help people protect
+    themselves from online threats.`
 
     const pidss = `The Phishing Identification and Decision Support System (PIDSS) is a tool developed as part of the 
     Master Workforce Internship 2023. This tool was made to help with identifying Phishing emails by
