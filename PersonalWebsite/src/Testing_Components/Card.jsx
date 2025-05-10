@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 
-const Card = ({text, title, showGithubLink, showLinkOfProject, img, alt}) => {
+const Card = ({text, title, showGithubLink, showLinkOfWebsite, img, alt}) => {
       {/*
       Explaining code: duration-300 ease-in-out hover:-translate-y-1 hover:scale-110
       This code is when the user hove on top of the card
@@ -26,9 +26,9 @@ const Card = ({text, title, showGithubLink, showLinkOfProject, img, alt}) => {
               */}
 
               <div className="card-footer text-center md:text-2xl text-xl">
-                {showLinkOfProject && typeof showLinkOfProject == "string" && showLinkOfProject.length > 0 &&
-                    <a href={showLinkOfProject} target="_blank">
-                        <p className="text-black"> Go to Proyect</p>
+                {showLinkOfWebsite && typeof showLinkOfWebsite == "string" && showLinkOfWebsite.length > 0 &&
+                    <a href={showLinkOfWebsite} target="_blank">
+                        <p className="text-black"> Go to Website</p>
                     </a>
                 }
                 {showGithubLink && typeof showGithubLink == "string" && showGithubLink.length > 0 &&
