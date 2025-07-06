@@ -49,10 +49,6 @@ const WorkExperienceTimeline = ()=> {
                  applied new technologies such as React, .NET 8, Entity Framework Core, Azure DevOps, API development, 
                  and C#. Contributed to the project’s completion in one month, ahead of the planned two-month schedule.`
 
-    const dataScienceSpeaker = `Acted as a distinguished speaker at the Inter American Data Camp held in the vibrant 
-                locale of Manati, Puerto Rico. Specialized in delivering a comprehensive curriculum that demystified
-                the fundamental aspects of data science, catering specifically to the diverse educational needs of the attendees.`
-
     const researchIntern = `Learned the fundamentals of Modeling and simulation for a Phishing Identification and 
                 Decision Support System. Played a pivotal role in the front-end development of a web application
                 designed to train employees in phishing attack prevention and enhance overall cybersecurity.
@@ -71,19 +67,13 @@ const WorkExperienceTimeline = ()=> {
                     <SVG />
                     <WorkExperience title="Success Center Inter-American University of Puerto Rico, Bayamón Campus - Student Tutor" 
                                     text={successCenter} 
-                                    date="AUG 2023 - DEC 2024"/>
+                                    date="AUG 2023 - DEC 2024" left={true}/>
                   </li>
                   <li>
                     <SVG />
                     <WorkExperience title="CEGsoft (Computer Expert Group) - Software Developer Intern"
                                     text={cegSoft}
-                                    date="JUN 2024 – JUL 2024" left={true} />
-                  </li>
-                  <li>
-                    <SVG />
-                    <WorkExperience title="Inter-American University of Puerto Rico – Bayamón Campus - Data Science Speaker"
-                                    text={dataScienceSpeaker}
-                                    date="SEP 2023 – DEC 2023"/>
+                                    date="JUN 2024 – JUL 2024" left={false} />
                   </li>
                   <li>
                     <SVG />

@@ -46,7 +46,7 @@ const Awards = () =>{
                             showGithubLink="https://github.com/InfoTech-UIPRB/Info-tech" /> 
 
                         <Card img={Assosiation_Website_IMG_V1} showGithubLink="https://github.com/InfoTech-UIPRB/Info-tech" 
-                              title="Assosiation Website Version 1" 
+                              title="First version of the Assosiation Website" 
                               text={associationWebsiteV1}/>  
 
                         <Card img={Catch_Phishing} 

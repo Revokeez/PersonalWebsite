@@ -14,7 +14,7 @@ import Img_Not_Found from "../assets/not_found_img.png"
 const Awards = () =>{
     const associationWebsite = `Successfully developed the latest version of the Association website using modern technologies like React
     and Tailwind CSS. Additionally, Implemented a streamlined Git and GitHub Actions pipeline to enable continuous integration
-    and automated deployments.`
+    and automated deployments..`
 
     const associationWebsiteV1 = `Designed and developed a responsive website using HTML, Tailwind CSS, and JavaScript to enhance the 
     online presence of the student association.`;   
@@ -46,7 +46,7 @@ const Awards = () =>{
                             showGithubLink="https://github.com/InfoTech-UIPRB/Info-tech" /> 
 
                         <Card img={Assosiation_Website_IMG_V1} showGithubLink="https://github.com/InfoTech-UIPRB/Info-tech" 
-                              title="Assosiation Website Version 1" 
+                              title="First version of the Assosiation Website" 
                               text={associationWebsiteV1}/>  
 
                         <Card img={Catch_Phishing} 
