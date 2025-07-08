@@ -49,11 +49,12 @@ const WorkExperienceTimeline = ()=> {
                  applied new technologies such as React, .NET 8, Entity Framework Core, Azure DevOps, API development, 
                  and C#. Contributed to the project’s completion in one month, ahead of the planned two-month schedule.`
 
-    const researchIntern = `Learned the fundamentals of Modeling and simulation for a Phishing Identification and 
+    const masterWorkforceResearchIntern = `Learned the fundamentals of Modeling and simulation for a Phishing Identification and 
                 Decision Support System. Played a pivotal role in the front-end development of a web application
                 designed to train employees in phishing attack prevention and enhance overall cybersecurity.
                 Proficiently used HTML, CSS, and JavaScript to create an interactive and informative
                 user interface for the training platform.`
+    const icermResearchIntern = 'Currently conducting research on food waste using technologies like Pandas and Matplotlib.'
 
     return (
       <div className="mt-10" id ="workexperience">
@@ -63,6 +64,12 @@ const WorkExperienceTimeline = ()=> {
                 timeline-compact is when the screen width is small. It shows the timeline verticaly but in the text are in the same column 
               */}
                 <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+                                    <li>
+                    <SVG />
+                    <WorkExperience title="ICERM, Brown University -  Research Intern	" 
+                                    text={icermResearchIntern} 
+                                    date="JUN 2025 - JUL 2025" left={false}/>
+                  </li>
                   <li>
                     <SVG />
                     <WorkExperience title="Success Center Inter-American University of Puerto Rico, Bayamón Campus - Student Tutor" 
@@ -78,7 +85,7 @@ const WorkExperienceTimeline = ()=> {
                   <li>
                     <SVG />
                     <WorkExperience title="Master Workforce Inter-American University of Puerto Rico, Bayamón Campus - Research Intern"
-                                    text={researchIntern}
+                                    text={masterWorkforceResearchIntern}
                                     date="JUN 2023 - AUG 2023" left={true}/>
                   </li>
                 </ul>
