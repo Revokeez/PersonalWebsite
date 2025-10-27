@@ -12,7 +12,7 @@ const ProfileImg = ({src}) => {
     return (
         <div className="flex justify-center">
           <div className="avatar">
-                <div className="size-100 rounded-full">
+                <div className="md:size-100 size-80 rounded-full">
                     <img src={src} alt="avatar" />
                 </div>
           </div>

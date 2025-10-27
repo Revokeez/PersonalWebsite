@@ -25,24 +25,10 @@ const Awards = () =>{
     We secured first place while competing against other students from various Inter American University campuses.`;
     
     const firstPlaceUPRM = `
-    Our team, Info-Slay, participated in the hackathon and focused on optimizing the scheduling of satellite operations in
-    a constellation of 5 satellites. We worked to efficiently prioritize critical tasks like space weather monitoring while
-    minimizing conflicts with other missions and maintaining the flow of data from satellites. The hackathon pushed us to collaborate,
-    think creatively, and leverage our technical expertise to solve a real-world problem in space technology.`;
+    Our team, Info-Slay, joined the hackathon to optimize scheduling for a constellation of 5 satellites. We prioritized critical tasks like space weather monitoring, minimized mission conflicts, and ensured smooth data flow. `;
     
     const firstPlaceISACA = `The competition focused on cybersecurity, where we analyzed a case study and were
     challenged to identify three issues and explain them within a limited of 90 min. We also had to present our findings to the judges.`;   
-    
-    const catchPhisingWebsite = `Catch Phish is an online platform to learn about Phishing emails and how to protect yourself against
-    them. This website was built as part of our submodel "Phish Training" for the Master Workforce Research Internship by the Interamerican
-    University of Puerto Rico, Bayamon campus and the Interamerican University of Puerto Rico, San German campus as part of our Modeling
-    and Simulation research program. This project hopes to help people learn how to identify Phishing emails and prevent falling into the
-    trap of bad actors.`
-
-    const pidss = `The Phishing Identification and Decision Support System (PIDSS) is a tool developed as part of the 
-    Master Workforce Internship 2023. This tool was made to help with identifying Phishing emails by
-    properly scanning for commonly known strategies. This tool has an easy to understand Interface where
-    users can see the ”Phishing Percentage” based on how likely the email provided is to be a Phishing attack.`
 
     return (
         <>
@@ -65,7 +51,7 @@ const Awards = () =>{
                               text={firstPlaceIHACK}/>
 
                         <Card img={First_Place_ISACA}  
-                              title="First Place ISACA IT Bown 2025" 
+                              title="First Place ISACA IT Bowl 2025" 
                               text={firstPlaceISACA}/> 
 
                         <Card img={First_Place_UPRM}   
