@@ -231,32 +231,32 @@ Error generating stack: `+c.message+`
  * @license: Licensed under MIT and Preline UI Fair Use License (https://preline.co/docs/license.html)
  * Copyright 2024 Preline Labs Ltd.
  */var g=this&&this.__importDefault||function(w){return w&&w.__esModule?w:{default:w}};Object.defineProperty(h,"__esModule",{value:!0});const v=g(f(287));class C extends v.default{constructor(m,l,r){super(m,l,r);const s=m.getAttribute("data-range-slider"),o=s?JSON.parse(s):{};this.concatOptions=Object.assign(Object.assign(Object.assign({},o),l),{cssClasses:Object.assign(Object.assign({},noUiSlider.cssClasses),this.processClasses(o.cssClasses))}),this.init()}get formattedValue(){const m=this.el.noUiSlider.get();if(Array.isArray(m)&&this.format){const l=[];return m.forEach(r=>{l.push(this.format.to(r))}),l}return this.format?this.format.to(m):m}processClasses(m){const l={};return Object.keys(m).forEach(r=>{r&&(l[r]=`${noUiSlider.cssClasses[r]} ${m[r]}`)}),l}init(){var m,l,r,s,o,a,d,p,y,x,k,b,S;this.createCollection(window.$hsRangeSliderCollection,this),(typeof((m=this.concatOptions)===null||m===void 0?void 0:m.formatter)=="object"?((r=(l=this.concatOptions)===null||l===void 0?void 0:l.formatter)===null||r===void 0?void 0:r.type)==="thousandsSeparatorAndDecimalPoints":((s=this.concatOptions)===null||s===void 0?void 0:s.formatter)==="thousandsSeparatorAndDecimalPoints")?this.thousandsSeparatorAndDecimalPointsFormatter():(typeof((o=this.concatOptions)===null||o===void 0?void 0:o.formatter)=="object"?((d=(a=this.concatOptions)===null||a===void 0?void 0:a.formatter)===null||d===void 0?void 0:d.type)==="integer":((p=this.concatOptions)===null||p===void 0?void 0:p.formatter)==="integer")?this.integerFormatter():typeof((y=this.concatOptions)===null||y===void 0?void 0:y.formatter)=="object"&&(!((k=(x=this.concatOptions)===null||x===void 0?void 0:x.formatter)===null||k===void 0)&&k.prefix||!((S=(b=this.concatOptions)===null||b===void 0?void 0:b.formatter)===null||S===void 0)&&S.postfix)&&this.prefixOrPostfixFormatter(),noUiSlider.create(this.el,this.concatOptions),this.concatOptions.disabled&&this.setDisabled()}formatValue(m){var l,r,s,o,a,d,p,y,x;let k="";return typeof((l=this.concatOptions)===null||l===void 0?void 0:l.formatter)=="object"?(!((s=(r=this.concatOptions)===null||r===void 0?void 0:r.formatter)===null||s===void 0)&&s.prefix&&(k+=(a=(o=this.concatOptions)===null||o===void 0?void 0:o.formatter)===null||a===void 0?void 0:a.prefix),k+=m,!((p=(d=this.concatOptions)===null||d===void 0?void 0:d.formatter)===null||p===void 0)&&p.postfix&&(k+=(x=(y=this.concatOptions)===null||y===void 0?void 0:y.formatter)===null||x===void 0?void 0:x.postfix)):k+=m,k}integerFormatter(){var m;this.format={to:l=>this.formatValue(Math.round(l)),from:l=>Math.round(+l)},!((m=this.concatOptions)===null||m===void 0)&&m.tooltips&&(this.concatOptions.tooltips=this.format)}prefixOrPostfixFormatter(){var m;this.format={to:l=>this.formatValue(l),from:l=>+l},!((m=this.concatOptions)===null||m===void 0)&&m.tooltips&&(this.concatOptions.tooltips=this.format)}thousandsSeparatorAndDecimalPointsFormatter(){var m;this.format={to:l=>this.formatValue(new Intl.NumberFormat("en-US",{minimumFractionDigits:2,maximumFractionDigits:2}).format(l)),from:l=>parseFloat(l.replace(/,/g,""))},!((m=this.concatOptions)===null||m===void 0)&&m.tooltips&&(this.concatOptions.tooltips=this.format)}setDisabled(){this.el.setAttribute("disabled","disabled"),this.el.classList.add("disabled")}destroy(){this.el.noUiSlider.destroy(),this.format=null,window.$hsRangeSliderCollection=window.$hsRangeSliderCollection.filter(({element:m})=>m.el!==this.el)}static getInstance(m,l=!1){const r=window.$hsRangeSliderCollection.find(s=>s.element.el===(typeof m=="string"?document.querySelector(m):m));return r?l?r:r.element.el:null}static autoInit(){window.$hsRangeSliderCollection||(window.$hsRangeSliderCollection=[]),window.$hsRangeSliderCollection&&(window.$hsRangeSliderCollection=window.$hsRangeSliderCollection.filter(({element:m})=>document.contains(m.el))),document.querySelectorAll("[data-range-slider]:not(.--prevent-on-load-init)").forEach(m=>{window.$hsRangeSliderCollection.find(l=>{var r;return((r=l==null?void 0:l.element)===null||r===void 0?void 0:r.el)===m})||new C(m)})}}window.addEventListener("load",()=>{C.autoInit()}),typeof window<"u"&&(window.HSRangeSlider=C),h.default=C}},i={};function u(c){var h=i[c];if(h!==void 0)return h.exports;var f=i[c]={exports:{}};return n[c].call(f.exports,f,f.exports,u),f.exports}return u.d=(c,h)=>{for(var f in h)u.o(h,f)&&!u.o(c,f)&&Object.defineProperty(c,f,{enumerable:!0,get:h[f]})},u.o=(c,h)=>Object.prototype.hasOwnProperty.call(c,h),u.r=c=>{typeof Symbol<"u"&&Symbol.toStringTag&&Object.defineProperty(c,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(c,"__esModule",{value:!0})},u(800)})())})($f);/**
- * @license lucide-react v0.507.0 - ISC
+ * @license lucide-react v0.548.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */const jf=e=>e.replace(/([a-z0-9])([A-Z])/g,"$1-$2").toLowerCase(),Mf=e=>e.replace(/^([A-Z])|[\s-_]+(\w)/g,(t,n,i)=>i?i.toUpperCase():n.toLowerCase()),uu=e=>{const t=Mf(e);return t.charAt(0).toUpperCase()+t.slice(1)},Ed=(...e)=>e.filter((t,n,i)=>!!t&&t.trim()!==""&&i.indexOf(t)===n).join(" ").trim(),_f=e=>{for(const t in e)if(t.startsWith("aria-")||t==="role"||t==="title")return!0};/**
- * @license lucide-react v0.507.0 - ISC
+ * @license lucide-react v0.548.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */var Bf={xmlns:"http://www.w3.org/2000/svg",width:24,height:24,viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:2,strokeLinecap:"round",strokeLinejoin:"round"};/**
- * @license lucide-react v0.507.0 - ISC
+ * @license lucide-react v0.548.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */const Rf=Ft.forwardRef(({color:e="currentColor",size:t=24,strokeWidth:n=2,absoluteStrokeWidth:i,className:u="",children:c,iconNode:h,...f},g)=>Ft.createElement("svg",{ref:g,...Bf,width:t,height:t,stroke:e,strokeWidth:i?Number(n)*24/Number(t):n,className:Ed("lucide",u),...!c&&!_f(f)&&{"aria-hidden":"true"},...f},[...h.map(([v,C])=>Ft.createElement(v,C)),...Array.isArray(c)?c:[c]]));/**
- * @license lucide-react v0.507.0 - ISC
+ * @license lucide-react v0.548.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */const bd=(e,t)=>{const n=Ft.forwardRef(({className:i,...u},c)=>Ft.createElement(Rf,{ref:c,iconNode:t,className:Ed(`lucide-${jf(uu(e))}`,`lucide-${e}`,i),...u}));return n.displayName=uu(e),n};/**
- * @license lucide-react v0.507.0 - ISC
+ * @license lucide-react v0.548.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
- */const Ff=[["path",{d:"M4 12h16",key:"1lakjw"}],["path",{d:"M4 18h16",key:"19g7jn"}],["path",{d:"M4 6h16",key:"1o0s65"}]],Id=bd("menu",Ff);/**
- * @license lucide-react v0.507.0 - ISC
+ */const Ff=[["path",{d:"M4 5h16",key:"1tepv9"}],["path",{d:"M4 12h16",key:"1lakjw"}],["path",{d:"M4 19h16",key:"1djgab"}]],Id=bd("menu",Ff);/**
+ * @license lucide-react v0.548.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
