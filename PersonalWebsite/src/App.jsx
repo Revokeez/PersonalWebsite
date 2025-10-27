@@ -29,6 +29,7 @@ import './CSS/index.css';
 
 //JS Files
 import "flyonui/flyonui.js";
+import SpotifyPlayer from "./Testing_Components/SpotifyPlayerComponent.jsx";
 
 const ImportDevelopmentCode = ({showDevelopmentCode}) =>
 {      
